@@ -11,7 +11,7 @@ class Actor < ActiveRecord::Base
     role_array =[]
     self.characters #gives an array of the characters
     self.characters.each do |character|
-    role_array << "#{character.name} - #{character.show.name}"  
+    role_array << "#{character.name} - #{character.show.name}"
   end
 
 end
